@@ -157,3 +157,10 @@ input[type="checkbox"]:checked+.authorization-window__span-box-for-replacement {
     border-bottom: solid rgba(251, 246, 228, 0.102) 2px ;
     
 }
+input {
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgba(251, 246, 228);
+    font-weight: bold;
+    line-height: 1.2;  
+  }
