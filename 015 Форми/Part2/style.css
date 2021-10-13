@@ -38,14 +38,14 @@ a {
     
         font-size: 18px;
         font-family: 'Quicksand', sans-serif;
-        color: rgba(251, 246, 228, 0.902);
+        color: rgba(251, 246, 228, 0.102);
         font-weight: bold;
         line-height: 1.2; 
 
 }
 
 .authorization-window__link:hover{
-    text-decoration: underline;
+    border-bottom: solid #e66a64 3px ;
 }
 
 .authorization-window__sign-in{
@@ -53,3 +53,25 @@ a {
 }
 
 
+.authorization-window__form {
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(251, 246, 228);
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  
+
+}
+
+ .authorization-window__input{
+    margin-top: 16px;
+    margin-bottom: 28px;
+    width: 392px;
+    height: 63px;
+    background: rgba(251, 246, 228, 0);
+    border: #9374c7 2px solid;
+
+ } 
+
+  
