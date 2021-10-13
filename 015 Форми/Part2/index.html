@@ -10,7 +10,30 @@
 <body>
     <main class="main">
         <div class="authorization-window">
-            
+
+            <ul class="authorization-window__authorization-selection">
+                <li class="authorization-window__sign-in" >
+                    <a class="authorization-window__link" href="#">Sign In</a>
+                </li>
+                <li class="authorization-window__join-us">
+                    <a class="authorization-window__link" href="#">Join Us</a>
+                </li>
+            </ul>
+            <form class="authorization-window__form">
+                <label  for="username"> Username</label>
+                <input  type="email" id="username" >
+
+                <label for="password"> Password</label>
+                <input id="password"  type="password" >
+                
+                <label for="keep-me-signed-in"> 
+                <input type="checkbox" name="keep-me-signed-in" id="keep-me-signed-in">
+               Keep me signed in </label>
+                <button type="submit"> Sign in</button>
+            </form>
+
+          <a class="uthorization-window__link" href="#">Forgot password</a>  
+          <a class="uthorization-window__link" href="#">Create an account</a>   
         </div>
     </main>
 

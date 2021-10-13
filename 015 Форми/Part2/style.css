@@ -1,9 +1,55 @@
-.main{
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+.main {
     background: #e5eeee;
     width: 100%;
     height: 100%;
 }
-.authorization-window{
-    width: 400px;
-    height: 496px;
+
+.authorization-window {
+  
+    width: 601px;
+    height: 746px;
+    background: url(./background-imageLarge.jpg) no-repeat;
+    padding:  83px 130px 85px 79px;
 }
+.authorization-window__form{
+    display: flex;
+    flex-direction: column;
+}
+.authorization-window__authorization-selection{ 
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+.authorization-window__join-us{
+    display: inline-block;
+
+    
+}
+
+.authorization-window__sign-in{
+    display: inline-block;
+
+}
+
+.authorization-window__link{
+    
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+        color: rgba(251, 246, 228, 0.902);
+        font-weight: bold;
+        line-height: 1.2; 
+
+}
+
+.authorization-window__link:hover{
+    text-decoration: underline;
+}
+
+.authorization-window__sign-in{
+    margin-right: 36px;
+}
+
+
