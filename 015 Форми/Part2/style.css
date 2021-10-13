@@ -1,3 +1,12 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    box-sizing: inherit;
+}
+*{transition: all .2s ease-in;}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 .main {
     background: #e5eeee;
@@ -36,7 +45,7 @@ a {
 
 .authorization-window__link{
     
-        font-size: 18px;
+        font-size: 27px;
         font-family: 'Quicksand', sans-serif;
         color: rgba(251, 246, 228, 0.102);
         font-weight: bold;
@@ -86,6 +95,7 @@ a {
 
  .authorization-window__keep-me-signed-in{
     padding: 0 0 0 35px;
+
  }
 
  .authorization-window__keep-me-signed-in input[type="checkbox"]+.authorization-window__span-box-for-replacement {
@@ -104,3 +114,38 @@ input[type="checkbox"]:checked+.authorization-window__span-box-for-replacement {
  
 }
 
+.authorization-window__checkbox-rel{
+    margin: 0 0 62px 0;
+}
+
+.authorization-window__button{
+
+    width: 392px;
+    height: 63px;
+    background-color: #23ae92;
+    border: none;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(251, 246, 228);
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    
+
+}
+.authorization-window__form{
+    margin-bottom: 47px;
+}
+
+.uthorization-window__link{
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgba(251, 246, 228, 0.102);
+    font-weight: bold;
+    line-height: 1.2;  
+}
+
+.wrap-links{
+    display: flex;
+    justify-content: space-betweenx;
+}
