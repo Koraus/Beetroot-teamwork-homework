@@ -134,22 +134,17 @@
     padding: 0 165px;
 }
 
-.footer__link-logo {
-    display: flex;
-    justify-content: center;
-    
-}
 
 .footer__copyright {
     font-size: 16px;
-    flex-basis: 33.3333%;
+    flex-basis: 47.5%;
     font-weight: 300;
     font-family: "Raleway";
     color: #6e6e6e;
 }
 
 .footer__link-logo {
-    flex-basis: 33.3333%;
+    flex-basis: 5%;
 }
 
 .footer__madeby {
@@ -158,9 +153,10 @@
     font-family: "Raleway";
     color: #6e6e6e;
     text-align: end;
-    flex-basis: 33.3333%;
+    flex-basis: 47.5%;
 }
-.footer__love-style{
+
+.footer__love-style {
     font-size: 16px;
     font-weight: 300;
     font-family: "Raleway";
@@ -169,5 +165,5 @@
 
 .footer__link-logo:focus {
     outline: 0;
-    
+
 }
