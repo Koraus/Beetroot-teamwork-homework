@@ -141,7 +141,11 @@
 }
 
 .footer__copyright {
+    font-size: 16px;
     flex-basis: 33.3333%;
+    font-weight: 300;
+    font-family: "Raleway";
+    color: #6e6e6e;
 }
 
 .footer__link-logo {
@@ -149,9 +153,16 @@
 }
 
 .footer__madeby {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Raleway";
+    color: #6e6e6e;
     text-align: end;
     flex-basis: 33.3333%;
 }
 .footer__love-style{
-    color: red;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Raleway";
+    color: #b22946;
 }
