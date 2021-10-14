@@ -166,3 +166,8 @@
     font-family: "Raleway";
     color: #b22946;
 }
+
+.footer__link-logo:focus {
+    outline: 0;
+    
+}
