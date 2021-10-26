@@ -708,6 +708,7 @@ template {
 
 .button-look {
   border: 1px solid yellow;
+  background-color: transparent;
 }
 
 .slider__toggle {
