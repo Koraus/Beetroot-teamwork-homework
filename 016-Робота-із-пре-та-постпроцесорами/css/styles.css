@@ -784,6 +784,12 @@ template {
 
 .slider__img-border-container-decor {
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .slider__img-border-container-decor::before {
@@ -812,6 +818,12 @@ template {
 .slider__img-border-container {
   border: 1px solid #ffd21c;
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .slider__img-border-container::before {
@@ -841,11 +853,33 @@ template {
 }
 
 .slider__team-member-name {
+  position: relative;
   text-align: center;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.slider__team-member-name::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 1px;
+  right: calc(50% - 50px);
+  bottom: 0%;
+  background: #ffd21c;
 }
 
 .slider__team-member-position {
   text-align: center;
+}
+
+.slider__social-network-bar {
+  text-align: center;
+}
+
+.slider__link {
+  text-decoration: none;
+  margin: 2px;
 }
 
 .slider__paragraph {
@@ -855,8 +889,7 @@ template {
 
 .slider__button {
   margin: 0 auto;
-  width: 200px;
-  height: 90px;
+  width: 100px;
 }
 
 .button-look {
