@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&family=Playfair+Display&family=Raleway:wght@100;400;700;900&display=swap');
 
 .header{
     position: fixed;
-
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -11,7 +10,6 @@
     padding: 15px  164px 0 164px;
     box-sizing: border-box;
     // background: linear-gradient(45deg, #2080e1 40%,#3564fc 40%) ;
-    
 }
 
 .info-content{
@@ -28,7 +26,6 @@
 }
 .nav__links{
     display: flex;
-
 }
 
 .nav__link{
@@ -53,17 +50,24 @@
 
 .info-content{
     display: flex;
-    align-items: center;
-
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .info-content__title{
-        font-family: 'Raleway', sans-serif;
-        font-weight: bold;
-        font-size: 60px;
-        color: rgb(38, 38, 38);
-        line-height: 0.417;     
+    margin-top: 360px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    color: rgb(38, 38, 38);  
 }
+
+.info-content__paragraph {
+    margin-top: 20px;
+    max-width: 370px;
+    line-height: 27px;
+}
+
 .info-content__button{
     width: 200px ;
     height: 55px ;
