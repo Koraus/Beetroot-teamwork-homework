@@ -706,8 +706,23 @@ template {
   display: none;
 }
 
+.header__decor::before {
+  content: "";
+  width: 80px;
+  height: 1px;
+}
+
+.header__decor::after {
+  content: "";
+}
+
+.slider__button {
+  width: 200px;
+  height: 90px;
+}
+
 .button-look {
-  border: 1px solid yellow;
+  border: 1px solid #ffd21c;
   background-color: transparent;
 }
 
@@ -716,7 +731,7 @@ template {
   width: 10px;
   height: 10px;
   background-color: transparent;
-  border: 1px solid yellow;
+  border: 1px solid #ffd21c;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -725,10 +740,10 @@ template {
 }
 
 .slider__toggle:focus {
-  border: 1px solid rgba(227, 148, 12, 0.571);
+  border: 1px solid #ffd21c;
   border-radius: 50%;
 }
 
 .slider__toggle--active {
-  background-color: yellow;
+  background-color: #ffd21c;
 }

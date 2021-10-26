@@ -1,0 +1,2 @@
+https://github.com/Koraus/Beetroot-teamwork-homework
+ background: linear-gradient(45deg, #2080e1 40%,#3564fc 40%);
