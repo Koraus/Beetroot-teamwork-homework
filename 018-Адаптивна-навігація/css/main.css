@@ -172,9 +172,7 @@
     width: 200px;
     height: 50%;
     margin: 0;
-    padding: 49px 0;
     list-style: none;
-    text-align: center;
     -webkit-transition-duration: 0.25s;
             transition-duration: 0.25s;
   }
@@ -231,7 +229,7 @@
     z-index: 1;
   }
 
-  #menu__toggle:checked ~ .menu__box {
+  #menu__toggle:checked ~ .nav__links {
     visibility: visible;
     right: 0;
   }
@@ -246,5 +244,15 @@
     text-decoration: none;
     -webkit-transition-duration: 0.25s;
             transition-duration: 0.25s;
+    position: relative;
+  }
+
+  nav__item:active::before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 100%;
+    left: -2px;
+    background-color: #ff6033;
   }
 }

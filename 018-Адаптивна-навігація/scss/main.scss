@@ -147,9 +147,7 @@
         width: 200px;
         height: 50%;
         margin: 0;
-        padding: 49px 0;
         list-style: none;
-        text-align: center;
         transition-duration: .25s;
     }
     .mobile-menu{
@@ -187,20 +185,15 @@
         height: 26px;
         cursor: pointer;
         z-index: 1;
-    }
+    } 
 
-    
-
-  
-
-    
-
-    #menu__toggle:checked~.menu__box {
+    #menu__toggle:checked~.nav__links {
         visibility: visible;
         right: 0;
     }
+
     .nav__item {
-        display: block;
+    display: block;
     padding: 12px 24px;
     color: white;
     font-family: "Raleway";
@@ -208,8 +201,17 @@
     font-weight: 600;
     text-decoration: none;
     transition-duration: .25s;
+    position: relative;
 
     }
 
+    nav__item:active::before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 100%;
+    left: -2px;
+    background-color: #ff6033;
+    }
 
 }
