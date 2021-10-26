@@ -782,8 +782,48 @@ template {
   border: 1px solid #ffd21c;
 }
 
+.slider__img-border-container-decor {
+  position: relative;
+}
+
+.slider__img-border-container-decor::after {
+  position: relative;
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid #ffd21c;
+  border-right: 1px solid #ffd21c;
+  top: -5px;
+}
+
+.slider__img-border-container-decor::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-bottom: 1px solid #ffd21c;
+  border-right: 1px solid #ffd21c;
+  top: 100px;
+}
+
 .slider__img-border-container {
   border: 1px solid #ffd21c;
+  position: relative;
+}
+
+.slider__img-border-container::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid #ffd21c;
+  border-left: 1px solid #ffd21c;
+  top: -5px;
+}
+
+.slider__img {
+  position: relative;
 }
 
 .slider__team-member-name {
@@ -830,4 +870,12 @@ template {
 
 .slider__toggle--active {
   background-color: #ffd21c;
+}
+
+.test {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  border-width: 3px;
+  border-style: solid;
 }
