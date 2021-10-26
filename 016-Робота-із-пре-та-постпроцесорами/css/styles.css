@@ -706,14 +706,10 @@ template {
   display: none;
 }
 
-
-
-
-
-
 .slider__toggle {
-  width: 100px;
-  height: 100px;
+  padding: 0px;
+  width: 10px;
+  height: 10px;
   background-color: transparent;
   border: 1px solid yellow;
   border-radius: 50%;
@@ -724,7 +720,8 @@ template {
 }
 
 .slider__toggle:focus {
-  outline: 1px solid red;
+  border: 1px solid rgba(227, 148, 12, 0.571);
+  border-radius: 50%;
 }
 
 .slider__toggle--active {
