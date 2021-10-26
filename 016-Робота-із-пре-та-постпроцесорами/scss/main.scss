@@ -3,6 +3,7 @@
     max-width: 1920px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 150px;
 }
 
 .header__text {
@@ -60,6 +61,7 @@ justify-content: space-around
 .slider__text-wrapper{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .slider__img-border-container {

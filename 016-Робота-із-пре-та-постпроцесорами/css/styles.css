@@ -710,6 +710,7 @@ template {
   max-width: 1920px;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 150px;
 }
 
 .header__title {
@@ -772,6 +773,9 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slider__img-border-container {
