@@ -136,7 +136,7 @@ justify-content: space-around
 }
 .slider__team-member-name::after{
     position: absolute;
-    content: '';
+    content:'';
     width: 100px;
     height: 1px;
     right: calc(50% - 50px);
