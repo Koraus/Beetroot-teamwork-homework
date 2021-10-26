@@ -52,6 +52,8 @@
 }
 
 .info-content{
+    display: flex;
+    align-items: center;
 
 }
 
@@ -61,4 +63,9 @@
         font-size: 60px;
         color: rgb(38, 38, 38);
         line-height: 0.417;     
+}
+.info-content__button{
+    width: 200px ;
+    height: 55px ;
+    background: #ff6033;
 }
