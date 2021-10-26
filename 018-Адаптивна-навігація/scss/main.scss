@@ -24,6 +24,11 @@
     max-width: 100%;
     height: fit-content;
 }
+
+.mobile-menu {
+    display: none;
+}
+
 .nav__links{
     display: flex;
 }
@@ -101,4 +106,19 @@
     position: absolute;
     bottom: 0%;
     left: 50%;
+}
+
+@media screen and (max-width:767px) {
+    .header__nav {
+        display: none;
+    }
+.header__nav-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
 }

@@ -35,6 +35,10 @@
   height: fit-content;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .nav__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,4 +128,23 @@
   position: absolute;
   bottom: 0%;
   left: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__nav-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
