@@ -706,14 +706,39 @@ template {
   display: none;
 }
 
+.header {
+  max-width: 1920px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header__decor {
+  position: relative;
+}
+
 .header__decor::before {
   content: "";
-  width: 80px;
+  width: 210px;
   height: 1px;
+  background-color: #ffd21c;
+  position: absolute;
+  top: 9px;
+  left: 26px;
 }
 
 .header__decor::after {
   content: "";
+  width: 210px;
+  height: 1px;
+  background: #ffd21c;
+  position: absolute;
+  top: 9px;
+  right: 26px;
+}
+
+.slider {
+  position: absolute;
+  width: 10px;
 }
 
 .slider__button {
