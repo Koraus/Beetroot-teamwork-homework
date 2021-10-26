@@ -63,5 +63,11 @@
     color: rgb(165, 151, 42);
 }
 
+.product-card--discount{
+    background: red;
+}
 
 
+.wrap__product-card{
+    margin: 40px;
+}
