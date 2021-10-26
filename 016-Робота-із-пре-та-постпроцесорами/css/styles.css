@@ -712,6 +712,14 @@ template {
   margin: 0 auto;
 }
 
+.header__title {
+  font-size: 60px;
+  font-family: "Roboto";
+  color: #ffcc00;
+  line-height: 1.1;
+  text-align: center;
+}
+
 .header__decor {
   position: relative;
 }
@@ -733,15 +741,62 @@ template {
   background: #ffd21c;
   position: absolute;
   top: 9px;
-  right: 26px;
+  left: -220px;
 }
 
 .slider {
-  position: absolute;
-  width: 10px;
+  margin: 0 auto;
+}
+
+.slider__wrapper {
+  margin: 0 auto;
+  max-width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.slider__img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slider__img-border-container {
+  border: 1px solid #ffd21c;
+}
+
+.slider__img-border-container {
+  border: 1px solid #ffd21c;
+}
+
+.slider__team-member-name {
+  text-align: center;
+}
+
+.slider__team-member-position {
+  text-align: center;
+}
+
+.slider__paragraph {
+  max-width: 440px;
+  text-align: center;
 }
 
 .slider__button {
+  margin: 0 auto;
   width: 200px;
   height: 90px;
 }

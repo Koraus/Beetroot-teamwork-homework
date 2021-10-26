@@ -8,6 +8,14 @@
 .header__text {
 }
 .header__title {
+ 
+        font-size: 60px;
+        font-family: "Roboto";
+        color: rgb(255, 204, 0);
+        line-height: 1.1;
+        text-align: center;
+  
+      
 }
 
 .header__decor{
@@ -35,16 +43,43 @@
 
 }
 .slider {
-    position: absolute;
-    width: 10px;
+    margin: 0 auto;
+
 }
+.slider__wrapper{
+    margin: 0 auto;
+    max-width: 1120px;
+display: flex;
+justify-content: space-around 
+}
+
+.slider__img-wrapper{
+    display: flex;  
+    
+}
+.slider__text-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
 .slider__img-border-container {
+    border: 1px solid #ffd21c;
 }
+
+.slider__img-border-container {
+    border: 1px solid #ffd21c;
+}
+
+
+
+
 .slider__img {
 }
 .slider__team-member-name {
+    text-align: center;
 }
 .slider__team-member-position {
+    text-align: center;
 }
 .slider__social-network-bar {
 }
@@ -61,8 +96,11 @@
 .linked-in {
 }
 .slider__paragraph {
+    max-width: 440px;
+    text-align: center;
 }
 .slider__button {
+    margin: 0 auto;
     width: 200px;
     height: 90px;
    
