@@ -706,6 +706,10 @@ template {
   display: none;
 }
 
+.button-look {
+  border: 1px solid yellow;
+}
+
 .slider__toggle {
   padding: 0px;
   width: 10px;
