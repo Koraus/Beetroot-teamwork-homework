@@ -74,16 +74,20 @@
 }
 
 .info-content__paragraph {
-    margin-top: 20px;
+    font-family: "Raleway";
+    font-weight: 100;
+    font-size: 17px;
+    color: #000;
+    margin-top: 18px;
     max-width: 370px;
     line-height: 27px;
 }
 
 .info-content__button{
     box-sizing: border-box;
-    width: 200px ;
-/*     height: 55px ; */
-    padding: 15px 0;
+    width: 200px;
+    margin-top: 22px;
+    padding: 17.5px 0;
     background: #ff6033;
     text-decoration: none;
     font-family: "Raleway";
@@ -91,4 +95,10 @@
     font-size: 20px;
     text-align: center;
     color: white;
+}
+
+.info-content__icon {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
 }
