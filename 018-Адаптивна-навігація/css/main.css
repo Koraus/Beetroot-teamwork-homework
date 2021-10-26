@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap");
 .header {
+  position: fixed;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,7 +11,8 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 50px 164px 0 164px;
+  min-height: 120px;
+  padding: 15px 164px 0 164px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
