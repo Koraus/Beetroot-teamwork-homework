@@ -8,7 +8,7 @@ function isTen(a){
     let c;
     let b; 
     
-    for (let i = firstN ; i<=endN || (isTen(i) == true) ; i++ ){
+    for (let i = firstN ; (isTen(i) == true) ; i++ ){
       
         if (isTen(i) == true) {
           
