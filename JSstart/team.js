@@ -90,23 +90,16 @@ function checkForTravel(objCar, driverName, distance) {
 
   let timeForTravel = (distance / objCar.averageSpeed) + Math.floor((distance / objCar.averageSpeed) / 4);
 
-  let canDrive;
+
   for (let key in objCar.drivers) {
     if (objCar.drivers[key] === driverName) {
-      console.log("співпадіння знайдено");
-      canDrive = true;
-      console.log(canDrive);
+      console.log('Цей водій може кермувати данною машиною')
       break
-    } else {
-      canDrive = false; console.log(canDrive)
+    } else { console.log('Цей водій НЕ може кермувати данною машиною')
+      
     }
   }
-  let displayCanDrive;
-  if (canDrive == true) {
-    displayCanDrive = 'Цей водій може кермувати данною машиною'
-  } else {
-    displayCanDrive = 'Цей водій НЕ може кермувати данною машиною'
-  }
+  
 
   fuelForTravel = (distance/100) * objCar.averageConsumption;
   if(fuelForTravel > objCar.fuelInTank){
@@ -118,5 +111,28 @@ function checkForTravel(objCar, driverName, distance) {
   return fuelForTravel;
 }
 
-console.log(checkForTravel(avto, 'Vika', 1500));
+console.log(checkForTravel(avto, 'Vika1', 1500));
 
+
+
+
+
+
+///прозапас
+  // let canDrive;
+  // for (let key in objCar.drivers) {
+  //   if (objCar.drivers[key] === driverName) {
+  //     console.log("співпадіння знайдено");
+  //     canDrive = true;
+  //     console.log(canDrive);
+  //     break
+  //   } else {
+  //     canDrive = false; 
+  //   }
+  // }
+  // let displayCanDrive;
+  // if (canDrive == true) {
+  //   displayCanDrive = 'Цей водій може кермувати данною машиною'
+  // } else {
+  //   displayCanDrive = 'Цей водій НЕ може кермувати данною машиною'
+  // }
