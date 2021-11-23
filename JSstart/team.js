@@ -95,11 +95,11 @@ function checkForTravel(objCar, driverName, distance) {
     if (objCar.drivers[key] === driverName) {
       console.log('Цей водій може кермувати данною машиною')
       break
-    } else { console.log('Цей водій НЕ може кермувати данною машиною')
-      
+    } else
+    { console.log('Цей водій НЕ може кермувати данною машиною')
     }
   }
-  
+
 
   fuelForTravel = (distance/100) * objCar.averageConsumption;
   if(fuelForTravel > objCar.fuelInTank){
