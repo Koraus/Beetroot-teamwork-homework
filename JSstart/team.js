@@ -97,25 +97,26 @@ function checkForTravel(objCar, driverName, distance) {
       canDrive = true;
       console.log(canDrive);
       break
-    } else { canDrive = false; console.log(canDrive) }
+    } else {
+      canDrive = false; console.log(canDrive)
+    }
   }
   let displayCanDrive;
   if (canDrive == true) {
     displayCanDrive = 'Цей водій може кермувати данною машиною'
-  } else { displayCanDrive = 'Цей водій НЕ може кермувати данною машиною' }
+  } else {
+    displayCanDrive = 'Цей водій НЕ може кермувати данною машиною'
+  }
 
-  return displayCanDrive;
+  fuelForTravel = (distance/100) * objCar.averageConsumption;
+  if(fuelForTravel > objCar.fuelInTank){
+     console.log('Палива не вистачить, необхідно дозапарвитися')
+  } else { 
+    console.log('щасливої дороги')
+  }
+
+  return fuelForTravel;
 }
 
-console.log(checkForTravel(avto, 'Vika', 900));
+console.log(checkForTravel(avto, 'Vika', 1500));
 
-
-  // function displayInfo(car) {
-//   for (let key in car) {
-//     if (key != 'drivers') {
-//       console.log(`${key} = ${car[key]}`)
-//     }
-
-// sumTime = Math.floor(timeForTravel) + timeForTravel
-// console.log(10/6)
-// console.log('mat ' + Math.floor(3/4))
