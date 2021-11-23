@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-card</title>
+    <!-- <link rel="stylesheet" href="./product-card.css"> -->
+    <style>
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 7px;
+    align: center;
+    width: 180px;
+    height: 230px;
+    background: #554596;
+    padding: 15px;
+
+}
+
+
+.product-card__image{
+    display: block;
+    padding: 0;
+    margin: 0;
+    border-radius: 7px;
+    box-sizing: border-box;
+    width: 147px;
+    height: 107px;
+}
+.product-card__name-bg{
+    display: block;
+    margin:10px 0 10px 0;
+    width: 140px;
+    background: #E5D541;
+    border-radius: 5px;
+   
+}
+
+.product-card__name{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    color: rgb(42, 165, 101);
+}
+
+
+.product-card__description{
+    display: block;
+    margin:10px 0 10px 0;
+    width: 140px;
+    background: #CE1539;
+    border-radius: 8px;
+    padding: 0;
+    font-size: 15px;
+    color: rgb(58, 42, 165);
+}
+
+.product-card__price{
+    display: block;
+    margin:0px 0 10px 0;
+    width: 80px;
+    background: #247C73;
+    border-radius: 5px;
+    padding: 0;
+
+    font-size: 15px;
+    color: rgb(165, 151, 42);
+}
+
+.product-card--discount{
+    background: red;
+}
+
+
+.wrap__product-card{
+}
+.bar{ 
+            width: 1200px;
+            padding: 100px;
+            background: #42ffaa;
+            display: flex;
+            margin: 0 auto;
+ }
+ h1{
+     text-align: center;
+ }
+
+ .bar__product-card{
+     margin: 0 50px 0 50px;          
+        }
+
+        .product-card--discount{
+            background: red;
+        }
+    .product-card--best-choise{
+        background-color: rgb(42, 10, 72);
+    }
+    .product-card__price--best-choise{
+        color: forestgreen;
+
+    }
+
+    
+    </style>
+</head>
+<body>
+    <h1>найкращі товари</h1>
+    <div class="bar">
+
+
+    <div class="product-card bar__product-card product-card--discount">
+        <img class="product-card__image" src="./orange-flowers.jpg" alt="">
+       <div class="product-card__name-bg"> <p class="product-card__name">card__name </p> </div>
+      <p class="product-card__description">description</p>
+        <p class="product-card__price">price</p>
+    </div>
+    <div class="product-card bar__product-card product-card--best-choise">
+        <img class="product-card__image" src="./orange-flowers.jpg" alt="">
+       <div class="product-card__name-bg"> <p class="product-card__name">card__name </p> </div>
+      <p class="product-card__description">description</p>
+        <p class="product-card__price product-card__price--best-choise">price</p>
+    </div>
+    <div class="product-card bar__product-card product-card--discount">
+        <img class="product-card__image" src="./orange-flowers.jpg" alt="">
+       <div class="product-card__name-bg"> <p class="product-card__name">card__name </p> </div>
+      <p class="product-card__description">description</p>
+        <p class="product-card__price">price</p>
+    </div>
+    <div class="product-card bar__product-card">
+        <img class="product-card__image" src="./orange-flowers.jpg" alt="">
+       <div class="product-card__name-bg"> <p class="product-card__name">card__name </p> </div>
+      <p class="product-card__description">description</p>
+        <p class="product-card__price">price</p>
+    </div>
+    </div>
+</body>
+</html>         
