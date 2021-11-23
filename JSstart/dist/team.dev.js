@@ -1,4 +1,4 @@
-
+"use strict";
 
 // let avto = {
 //   manufacturer: 'Germany',
@@ -20,24 +20,17 @@
 //   }
 // }
 // // displayInfo(avto);
-
 // function addNewDriver(car, driver) {
 //   car.drivers.driver3 = driver;
 // }
 // // addNewDriver(avto, 'Vika')
 // // console.log(avto.drivers.driver3);
-
-
 // function addFuel(car, fuel) {
 //   car.fuelInTank = car.fuelInTank + fuel;
 // }
 // addFuel(avto, 10)
 // console.log(avto.fuelInTank);
-
-
 // function calcTimeForTravel(car, distance)
-
-
 // {
 //   let time = distance / car.averageSpeed;
 //   let totalTime;
@@ -51,26 +44,17 @@
 //   return totalTime;
 // }
 // console.log(timeForTravel(avto, 399));
-
-
-
-
-
-
-
 // Підрахунок необхідного часу для подолання переданої відстані з середньою швидкістю.
 // Враховуй, що через кожні 4 години дороги водієві необхідно робити перерву на 1 годину,
 //  а також потрібно перевіряти чи має право водій керувати даним автомобілем (ім'я водія функція приймає другим аргументом).
 //  Також потрібно перевірити чи вистачить палива, для здійснення цієї поїздки,
 //  якщо палива не вистачить потрібно вивести повідомлення, про це і запропонувати заправити автомобіль
-
 // Відстань (яку ми хочемо проїхати) / середню швидкість = час на дорогу
 // якось первірити скільки зупинок на 1 годину потрібно (кожні 4 години 1 година перерва )
 // чи має право керувати атомобілем водій з певним іменем (взяти імя водія і порізвняти з усіма іменами водіїв які мають право керувати автомобілем, якщо співпало, то може, якщо не співпало то не може)
 // потрібно зрозуміти розхід палива на поїздку( для цього нам потрібно розділити загальну кількість км / на розхід топлива)
 //якщо буде замало - повідомлення що мало і запропонувати заправити.
-
-let avto = {
+var avto = {
   manufacturer: 'Germany',
   model: 'Opel',
   year: 2012,
@@ -82,62 +66,48 @@ let avto = {
     driver2: 'Vova',
     driver3: 'Vika',
     driver4: 'Vika1',
-    driver5: 'Vika4',
+    driver5: 'Vika4'
   }
-}
+};
 
 function checkForTravel(objCar, driverName, distance) {
+  var timeForTravel = distance / objCar.averageSpeed + Math.floor(distance / objCar.averageSpeed / 4);
 
-  let timeForTravel = (distance / objCar.averageSpeed) + Math.floor((distance / objCar.averageSpeed) / 4);
-
-  let canDrive = 0;
-  for (let key in objCar.drivers) {
+  for (var key in objCar.drivers) {
     if (objCar.drivers[key] === driverName) {
-      console.log('Цей водій може кермувати данною машиною')
-      break
-
-    } else  { 
-     canDrive  = canDrive ;
-
+      console.log('Цей водій може кермувати данною машиною');
+      break;
+    } else {
+      console.log('Цей водій НЕ може кермувати данною машиною');
     }
-  } 
-  // console.log( 'v else ' + Boolean(canDrive == false));
-  
-  
+  }
 
+  fuelForTravel = distance / 100 * objCar.averageConsumption;
 
-  fuelForTravel = (distance/100) * objCar.averageConsumption;
-  if(fuelForTravel > objCar.fuelInTank){
-     console.log('Палива не вистачить, необхідно дозапарвитися')
-  } else { 
-    console.log('щасливої дороги')
+  if (fuelForTravel > objCar.fuelInTank) {
+    console.log('Палива не вистачить, необхідно дозапарвитися');
+  } else {
+    console.log('щасливої дороги');
   }
 
   return fuelForTravel;
 }
 
-console.log(checkForTravel(avto, 'Vova', 100));
-
-
-
-
-
-
-///прозапас
-  // let canDrive;
-  // for (let key in objCar.drivers) {
-  //   if (objCar.drivers[key] === driverName) {
-  //     console.log("співпадіння знайдено");
-  //     canDrive = true;
-  //     console.log(canDrive);
-  //     break
-  //   } else {
-  //     canDrive = false; 
-  //   }
-  // }
-  // let displayCanDrive;
-  // if (canDrive == true) {
-  //   displayCanDrive = 'Цей водій може кермувати данною машиною'
-  // } else {
-  //   displayCanDrive = 'Цей водій НЕ може кермувати данною машиною'
-  // }
+console.log(checkForTravel(avto, 'Vika144', 1500)); ///прозапас
+// let canDrive;
+// for (let key in objCar.drivers) {
+//   if (objCar.drivers[key] === driverName) {
+//     console.log("співпадіння знайдено");
+//     canDrive = true;
+//     console.log(canDrive);
+//     break
+//   } else {
+//     canDrive = false; 
+//   }
+// }
+// let displayCanDrive;
+// if (canDrive == true) {
+//   displayCanDrive = 'Цей водій може кермувати данною машиною'
+// } else {
+//   displayCanDrive = 'Цей водій НЕ може кермувати данною машиною'
+// }
