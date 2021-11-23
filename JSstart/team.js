@@ -85,38 +85,46 @@ let avto = {
     driver5: 'Vika4',
   }
 }
+let superCar = {
+  manufacturer: 'Itali',
+  model: 'Opel',
+  year: 2012,
+  averageSpeed: 200,
+  fuelInTank: 200,
+  averageConsumption: 7,
+  drivers: {
+    driver1: 'Vika',
+  
+  }
+}
 
 function checkForTravel(objCar, driverName, distance) {
 
   let timeForTravel = (distance / objCar.averageSpeed) + Math.floor((distance / objCar.averageSpeed) / 4);
 
-  let canDrive = 0;
+  let canDrive;
+
   for (let key in objCar.drivers) {
     if (objCar.drivers[key] === driverName) {
-      console.log('Цей водій може кермувати данною машиною')
+      canDrive = 'YES'
       break
-
-    } else  { 
-     canDrive  = canDrive ;
-
-    }
-  } 
-  // console.log( 'v else ' + Boolean(canDrive == false));
-  
-  
-
-
-  fuelForTravel = (distance/100) * objCar.averageConsumption;
-  if(fuelForTravel > objCar.fuelInTank){
-     console.log('Палива не вистачить, необхідно дозапарвитися')
-  } else { 
-    console.log('щасливої дороги')
+    } else { canDrive = 'NO' }
   }
 
-  return fuelForTravel;
+  if (canDrive == 'YES') {
+    console.log('Водій може керувати автомобілем')
+  } else { console.log('Даний водій не може керувати автомобілем') }
+
+  fuelForTravel = (distance / 100) * objCar.averageConsumption;
+  if (fuelForTravel > objCar.fuelInTank) {
+    console.log('Палива не вистачить, необхідно дозапарвитися')
+  } else {
+    console.log('щасливої дороги')
+  }
+  return;
 }
 
-console.log(checkForTravel(avto, 'Vova', 100));
+checkForTravel(superCar, 'Vika', 12390);
 
 
 
