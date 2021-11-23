@@ -41,3 +41,59 @@
 //     }
 // }
 }
+
+//  { //Функції
+//Напиши всі можливі варіанти створення функцій.
+// let t = 10;
+// function addTwoNumbers(number1, number2){
+// // let result = number1 + number2;
+// t = t +1;
+// // console.log(result)
+// // // return result;
+// }
+
+// console.log('58row ' + t );
+// let r = console.log(addTwoNumbers());
+// console.log('60row ' + t );
+
+// let c = 18;
+// let g = 2;
+
+// let r = addTwoNumbers(c, g);
+// console.log( 'r '+ r);
+
+// }
+//спосіб 1
+// console.log(nameOffunction(2,4,6));
+
+// function nameOffunction(a, f, h){
+//     let c = a + f + h
+//     return c;
+// }
+// спосіб2
+// let g;
+// g = 10;
+// console.log(g);
+// g = function  (a, f, h){
+//     let c = a + f + h
+//     return c;
+// }
+// console.log(g(2,4,7));
+
+// g = 10;
+// console.log(g)
+
+// спосіб 3
+// let g = (a,b) => a + b;
+// console.log(g(10,12));
+// console.log(g)
+
+
+
+// Створи функцію, яка буде виводити кількість переданих їй аргументів.
+function displayNumOfArg (...arr){
+    let num = arr.length;
+    console.log(num)
+}
+
+displayNumOfArg(4,4,4,4,4)
