@@ -91,9 +91,9 @@
 
 
 // Створи функцію, яка буде виводити кількість переданих їй аргументів.
-function displayNumOfArg (...arr){
-    let num = arr.length;
-    console.log(num)
-}
+// function displayNumOfArg (...arr){
+//     let num = arr.length;
+//     console.log(num)
+// }
+// displayNumOfArg(4,4,4,4,4)
 
-displayNumOfArg(4,4,4,4,4)
