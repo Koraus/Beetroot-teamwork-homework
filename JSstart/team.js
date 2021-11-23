@@ -10,7 +10,7 @@ let avto = {
     driver2: 'Vova',
   }
 }
-function displayInfo(car) {
+/* function displayInfo(car) {
   for (let key in car) {
     if (key != 'drivers') {
       console.log(`${key} = ${car[key]}`)
@@ -31,7 +31,7 @@ function addFuel(car, fuel) {
 }
 addFuel(avto, 10)
 console.log(avto.fuelInTank);
-
+ */
 
 function timeForTravel(car, distance) {
   let time = distance / car.averageSpeed;
