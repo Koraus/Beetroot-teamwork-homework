@@ -102,16 +102,27 @@
 // 1 - якщо перше число більше, ніж друге; 
 // 0 - якщо числа рівні.
 
-function compareTwoNumbers(number1, number2) {
-    if (number1 < number2) {
-        return -1;
-    } else if (number1 > number2) {
-        return 1;
-    } else if (number1 === number2) {
-        return 0;
-    } else {
-        return 'Неправильное значение'
-    }
-    
-}
-console.log (compareTwoNumbers(345, 500))
+// function compareTwoNumbers(number1, number2) {
+//     if (number1 < number2) {
+//         return -1;
+//     } else if (number1 > number2) {
+//         return 1;
+//     } else if (number1 === number2) {
+//         return 0;
+//     } else {
+//         return 'Неправильное значение'
+//     }
+// }
+// console.log (compareTwoNumbers(345, 500))
+
+// function compareTwoNumbers(number1, number2) {
+//     if (number1 < number2) {
+//         return -1;
+//     } if (number1 > number2) {
+//         return 1;
+//     } if (number1 === number2) {
+//         return 0;
+//     }
+//         return 'Неправильное значение'
+// }
+// console.log(compareTwoNumbers(4,1));
