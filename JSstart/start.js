@@ -97,3 +97,21 @@
 // }
 // displayNumOfArg(4,4,4,4,4)
 
+//  Напиши функцію, яка приймає 2 числа і повертає :
+// -1, якщо перше число менше, ніж друге; 
+// 1 - якщо перше число більше, ніж друге; 
+// 0 - якщо числа рівні.
+
+function compareTwoNumbers(number1, number2) {
+    if (number1 < number2) {
+        return -1;
+    } else if (number1 > number2) {
+        return 1;
+    } else if (number1 === number2) {
+        return 0;
+    } else {
+        return 'Неправильное значение'
+    }
+    
+}
+console.log (compareTwoNumbers(345, 500))
