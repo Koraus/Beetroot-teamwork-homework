@@ -126,3 +126,17 @@
 //         return 'Неправильное значение'
 // }
 // console.log(compareTwoNumbers(4,1));
+
+// Напиши функцію, 
+// яка приймає три окремі цифри і перетворює їх в одне число.
+// Наприклад: цифри 1, 4, 9 перетворяться в число 149.
+
+function uniteThreeNumbers(number1, number2, number3) {
+    if (number1 == Number && number2 == Number && number3 == Number) {
+        let result = "" + number1 + number2 + number3;
+        return parseInt(result);
+    }
+    return "Внимательно читай, Балбес!"
+}
+
+console.log(uniteThreeNumbers(1, 2, 3));
