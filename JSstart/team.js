@@ -81,6 +81,8 @@ let avto = {
     driver1: 'Ivan',
     driver2: 'Vova',
     driver3: 'Vika',
+    driver4: 'Vika1',
+    driver5: 'Vika4',
   }
 }
 
@@ -89,22 +91,23 @@ function checkForTravel(objCar, driverName, distance) {
   let timeForTravel = (distance / objCar.averageSpeed) + Math.floor((distance / objCar.averageSpeed) / 4);
 
   let canDrive;
-
   for (let key in objCar.drivers) {
-
     if (objCar.drivers[key] === driverName) {
+      console.log("співпадіння знайдено");
       canDrive = true;
-      break;
-      
-    } else { canDrive = false }
-    console.log(canDrive)
-
+      console.log(canDrive);
+      break
+    } else { canDrive = false; console.log(canDrive) }
   }
+    let displayCanDrive;
+    if (canDrive == true) {
+    displayCanDrive = 'Цей водій може кермувати данною машиною'
+  } else { displayCanDrive = 'Цей водій НЕ може кермувати данною машиною' }
 
-  return 'Ми працюємо';
+  return displayCanDrive;
 }
 
-console.log(checkForTravel(avto, 'Vova', 900));
+console.log(checkForTravel(avto, 'Vika', 900));
 
 
   // function displayInfo(car) {
