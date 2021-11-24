@@ -131,11 +131,11 @@ t = t +1;
 // яка приймає три окремі цифри і перетворює їх в одне число.
 // Наприклад: цифри 1, 4, 9 перетворяться в число 149.
 
-function uniteThreeNumbers(number1, number2, number3) {
-        let result = "" + number1 + number2 + number3;
-        return parseInt(result);
+// function uniteThreeNumbers(number1, number2, number3) {
+//         let result = "" + number1 + number2 + number3;
+//         return parseInt(result);
 
    
-}
-console.log(uniteThreeNumbers(1, 4, 3));
-console.log(typeof(uniteThreeNumbers(1, 2, 3)));
+// }
+// console.log(uniteThreeNumbers(1, 4, 3));
+// console.log(typeof(uniteThreeNumbers(1, 2, 3)));

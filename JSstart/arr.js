@@ -213,7 +213,7 @@ const shoppingList = [
 
 
 ]
-
+// Покупка продукту. Функція приймає назву продукту і відзначає його як придбаний.
 function buyProduct(arr, nameOfProduct) {
 
  for (i = 0; i < arr.length; i++) {
@@ -237,6 +237,7 @@ function buyProduct(arr, nameOfProduct) {
 buyProduct(shoppingList, 'apples');
 // console.log(shoppingList);
 
+// Створення списку (не) придбаних продуктів.
 function showUnbought(arr) {
     let unboughtProduct = arr.filter(unbought => unbought.bought === false);
     let print = '';
@@ -247,7 +248,9 @@ function showUnbought(arr) {
 }
 console.log(showUnbought(shoppingList));
 
-//Робота функції що виводить список непридбаних продуктів спочатку, роботу робимо над копією ісходного масиву.
+// Виводити весь список на екран таким чином, щоб спочатку йшли продукти, що ще не придбані, а потім - ті, що вже придбали.
+// (Робота функції що виводить список непридбаних продуктів спочатку, роботу робимо над копією ісходного масиву.)
+
 // let shoppingListForWork = shoppingList.slice()
 // function compareProduct(arr) {
 //     arr.sort( function (left, right) {
@@ -257,18 +260,3 @@ console.log(showUnbought(shoppingList));
 // compareProduct(shoppingListForWork);
 // console.log(shoppingListForWork);
 //
-
-let a = {
-    func1 : function(a,b ) { 
-         let  c = a + b 
-         return c ; } ,
-}
-
-console.log(  a.func1(4,4));
-let b = {};
-b.func1(4,10)
-
-let c = [
-    
-];
-c.
