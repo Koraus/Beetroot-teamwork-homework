@@ -42,15 +42,15 @@
 // }
 }
 
-//  { //Функції
-//Напиши всі можливі варіанти створення функцій.
-// let t = 10;
-// function addTwoNumbers(number1, number2){
-// // let result = number1 + number2;
-// t = t +1;
-// // console.log(result)
-// // // return result;
-// }
+ { //Функції
+// Напиши всі можливі варіанти створення функцій.
+let t = 10;
+function addTwoNumbers(number1, number2){
+// let result = number1 + number2;
+t = t +1;
+// console.log(result)
+// // return result;
+}
 
 // console.log('58row ' + t );
 // let r = console.log(addTwoNumbers());
