@@ -110,22 +110,22 @@ var doubles = numbers.map(function(num) {
 
 
 
-let moloko = 'wdw';
+// let moloko = 'wdw';
 
-const product = [
-    'Moloko',
-    4,
-    moloko,
-    'last',
-    'lastlsat'
-]
+// const product = [
+//     'Moloko',
+//     4,
+//     moloko,
+//     'last',
+//     'lastlsat'
+// ]
 
-const colors = [
-    'Yellow',
-    5,
-    'Blue',
-    'Green'
-]
+// const colors = [
+//     'Yellow',
+//     5,
+//     'Blue',
+//     'Green'
+// ]
 
 
 
@@ -151,3 +151,82 @@ const colors = [
 //console.log(product)
 //product.push('Text')
 //console.log(product)
+
+
+// function greeting(name) {
+//     alert('Hello ' + name);
+//   }
+  
+//   function processUserInput(callback) {
+//     var name = prompt('Please enter your name.');
+//     callback(name);
+//   }
+  
+//   processUserInput(greeting);
+
+// let items = ['a', 'b', 'c'];
+// let copy
+
+// items.forEach(function(item){
+//     copy.push(item)
+//   })
+//   console.log(copy)
+
+
+
+// Задача 1
+// Домашнє завдання
+
+// Мінімум
+
+// Створи масив «Список покупок». Кожен елемент масиву є об'єктом, 
+// який містить
+// назву продукту,
+//  кількість 
+//  і куплений він чи ні, 
+//  ціну за одиницю товару, 
+//  Написати кілька функцій для роботи з таким масивом:
+// Виводити весь список на екран таким чином, щоб спочатку йшли продукти, що ще не придбані, а потім - ті, що вже придбали.
+// Покупка продукту. Функція приймає назву продукту і відзначає його як придбаний.
+// Створення списку (не) придбаних продуктів.
+ 
+const shoppingList = [
+     {
+        productName : 'tomatoes',
+        quantity : 4 ,
+        bought : true,
+        unitPrice : 5,
+    },
+    {
+        productName : 'apples',
+        quantity : 2 ,
+        bought : false,
+        unitPrice : 3,
+    },
+    {
+        productName : 'bananas',
+        quantity : 10 ,
+        bought : true,
+        unitPrice : 6,
+    },
+    
+]
+
+function buyProduct(arr, nameOfProduct ) {
+    let a = arr.filter(inBusket => inBusket.productName === nameOfProduct);
+    return a;
+}
+console.log(buyProduct(shoppingList, 'bananas'));
+
+
+
+//Робота функції що виводить список непридбаних продуктів спочатку, роботу робимо над копією ісходного масиву.
+// let shoppingListForWork = shoppingList.slice()
+// function compareProduct(arr) {
+//     arr.sort( function (left, right) {
+//       return (left.bought - right.bought);
+//     })
+// }
+// compareProduct(shoppingListForWork);
+// console.log(shoppingListForWork);
+////

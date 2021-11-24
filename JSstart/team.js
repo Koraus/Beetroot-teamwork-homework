@@ -70,61 +70,61 @@
 // потрібно зрозуміти розхід палива на поїздку( для цього нам потрібно розділити загальну кількість км / на розхід топлива)
 //якщо буде замало - повідомлення що мало і запропонувати заправити.
 
-let avto = {
-  manufacturer: 'Germany',
-  model: 'Opel',
-  year: 2012,
-  averageSpeed: 100,
-  fuelInTank: 70,
-  averageConsumption: 7,
-  drivers: {
-    driver1: 'Ivan',
-    driver2: 'Vova',
-    driver3: 'Vika',
-    driver4: 'Vika1',
-    driver5: 'Vika4',
-  }
-}
-let superCar = {
-  manufacturer: 'Itali',
-  model: 'Opel',
-  year: 2012,
-  averageSpeed: 200,
-  fuelInTank: 200,
-  averageConsumption: 7,
-  drivers: {
-    driver1: 'Vika',
+// let avto = {
+//   manufacturer: 'Germany',
+//   model: 'Opel',
+//   year: 2012,
+//   averageSpeed: 100,
+//   fuelInTank: 70,
+//   averageConsumption: 7,
+//   drivers: {
+//     driver1: 'Ivan',
+//     driver2: 'Vova',
+//     driver3: 'Vika',
+//     driver4: 'Vika1',
+//     driver5: 'Vika4',
+//   }
+// }
+// let superCar = {
+//   manufacturer: 'Itali',
+//   model: 'Opel',
+//   year: 2012,
+//   averageSpeed: 200,
+//   fuelInTank: 200,
+//   averageConsumption: 7,
+//   drivers: {
+//     driver1: 'Vika',
   
-  }
-}
+//   }
+// }
 
-function checkForTravel(objCar, driverName, distance) {
+// function checkForTravel(objCar, driverName, distance) {
 
-  let timeForTravel = (distance / objCar.averageSpeed) + Math.floor((distance / objCar.averageSpeed) / 4);
+//   let timeForTravel = (distance / objCar.averageSpeed) + Math.floor((distance / objCar.averageSpeed) / 4);
 
-  let canDrive;
+//   let canDrive;
 
-  for (let key in objCar.drivers) {
-    if (objCar.drivers[key] === driverName) {
-      canDrive = 'YES'
-      break
-    } else { canDrive = 'NO' }
-  }
+//   for (let key in objCar.drivers) {
+//     if (objCar.drivers[key] === driverName) {
+//       canDrive = 'YES'
+//       break
+//     } else { canDrive = 'NO' }
+//   }
 
-  if (canDrive == 'YES') {
-    console.log('Водій може керувати автомобілем')
-  } else { console.log('Даний водій не може керувати автомобілем') }
+//   if (canDrive == 'YES') {
+//     console.log('Водій може керувати автомобілем')
+//   } else { console.log('Даний водій не може керувати автомобілем') }
 
-  fuelForTravel = (distance / 100) * objCar.averageConsumption;
-  if (fuelForTravel > objCar.fuelInTank) {
-    console.log('Палива не вистачить, необхідно дозапарвитися')
-  } else {
-    console.log('щасливої дороги')
-  }
-  return;
-}
+//   fuelForTravel = (distance / 100) * objCar.averageConsumption;
+//   if (fuelForTravel > objCar.fuelInTank) {
+//     console.log('Палива не вистачить, необхідно дозапарвитися')
+//   } else {
+//     console.log('щасливої дороги')
+//   }
+//   return;
+// }
 
-checkForTravel(superCar, 'Vika', 12390);
+// checkForTravel(superCar, 'Vika', 12390);
 
 
 
@@ -149,3 +149,32 @@ checkForTravel(superCar, 'Vika', 12390);
   // } else {
   //   displayCanDrive = 'Цей водій НЕ може кермувати данною машиною'
   // }
+
+  // 
+//  let  shoppingList = {
+//     productName : 'tomatoes',
+//     quantity : 4 ,
+//     bought : true,
+//     unitPrice : 5,
+//     sum: ,
+// }
+// shoppingList.quantity * shoppingList.unitPrice
+
+// console.log(shoppingList.sum)
+
+let car = {
+  averageSpeed : 100,
+}
+let car2 = {
+  averageSpeed : 120,
+}
+
+
+function nameS (всеЩохочу,  distance) {
+
+ let time =  distance / всеЩохочу.averageSpeed;
+
+ return time;
+}
+console.log(nameS(car, 100 ))
+// console.log()
