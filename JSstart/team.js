@@ -1,4 +1,4 @@
-
+/*
 
 // // let avto = {
 // //   manufacturer: 'Germany',
@@ -94,7 +94,7 @@
 // //   averageConsumption: 7,
 // //   drivers: {
 // //     driver1: 'Vika',
-  
+
 // //   }
 // // }
 
@@ -140,7 +140,7 @@
 //   //     console.log(canDrive);
 //   //     break
 //   //   } else {
-//   //     canDrive = false; 
+//   //     canDrive = false;
 //   //   }
 //   // }
 //   // let displayCanDrive;
@@ -150,7 +150,7 @@
 //   //   displayCanDrive = 'Цей водій НЕ може кермувати данною машиною'
 //   // }
 
-//   // 
+//   //
 // //  let  shoppingList = {
 // //     productName : 'tomatoes',
 // //     quantity : 4 ,
@@ -183,4 +183,4 @@ function add (a, b){
   let c = a + b;
   return ;
 }
-console.log(add(1,4));
+console.log(add(1,4));*/
