@@ -132,6 +132,9 @@ const colors = [
 
 
 
+
+
+//FOR HISTORY
 // for (let i = 0; i < product.length; i++) {
 //     console.log(product[i])
 // }
