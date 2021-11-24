@@ -1,12 +1,17 @@
+//NEXT
 //Метод Array.isArray() возвращает true, если объект является массивом и false, если он массивом не является.
 //Array.isArray(obj)
 //console.log(Array.isArray(product))
 
+
+//NEXT
 //Метод indexOf() возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет.
 //arr.indexOf(searchElement[, fromIndex = 0])
 //console.log(product.indexOf('last'))
 //console.log(product.indexOf('last', [fromIndex = 0]))
 
+
+//NEXT
 //???Метод sort() на месте сортирует элементы массива и возвращает отсортированный массив. Сортировка не обязательно устойчива (англ.). Порядок сортировки по умолчанию соответствует порядку кодовых точек Unicode.
 //arr.sort([compareFunction])
 //var numbers = [4, 2, 5, 1, 3];
@@ -16,6 +21,7 @@
 //   console.log(numbers); // [1, 2, 3, 4, 5]
 
 
+//NEXT
 //Метод concat() возвращает новый массив, состоящий из массива, на котором он был вызван, соединённого с другими массивами и/или значениями, переданными в качестве аргументов. Array.prototype.concat()
 //var new_array = old_array.concat(value1[, value2[, ...[, valueN]]])
 /*
@@ -29,6 +35,7 @@ console.log(array3);
 //console.log(product.concat(colors))
 
 
+//NEXT
 //Метод slice() возвращает новый массив, содержащий копию части исходного массива. Array.prototype.slice()
 //arr.slice([begin[, end]])
 //console.log(product.slice(0, -1));
