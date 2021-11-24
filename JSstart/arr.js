@@ -256,4 +256,19 @@ console.log(showUnbought(shoppingList));
 // }
 // compareProduct(shoppingListForWork);
 // console.log(shoppingListForWork);
-////
+//
+
+let a = {
+    func1 : function(a,b ) { 
+         let  c = a + b 
+         return c ; } ,
+}
+
+console.log(  a.func1(4,4));
+let b = {};
+b.func1(4,10)
+
+let c = [
+    
+];
+c.
