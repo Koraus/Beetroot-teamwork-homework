@@ -156,12 +156,12 @@ var doubles = numbers.map(function(num) {
 // function greeting(name) {
 //     alert('Hello ' + name);
 //   }
-  
+
 //   function processUserInput(callback) {
 //     var name = prompt('Please enter your name.');
 //     callback(name);
 //   }
-  
+
 //   processUserInput(greeting);
 
 // let items = ['a', 'b', 'c'];
@@ -189,36 +189,63 @@ var doubles = numbers.map(function(num) {
 // Виводити весь список на екран таким чином, щоб спочатку йшли продукти, що ще не придбані, а потім - ті, що вже придбали.
 // Покупка продукту. Функція приймає назву продукту і відзначає його як придбаний.
 // Створення списку (не) придбаних продуктів.
- 
+
 const shoppingList = [
-     {
-        productName : 'tomatoes',
-        quantity : 4 ,
-        bought : true,
-        unitPrice : 5,
+    {
+        productName: 'tomatoes',
+        quantity: 4,
+        bought: false,
+        unitPrice: 5,
     },
     {
-        productName : 'apples',
-        quantity : 2 ,
-        bought : false,
-        unitPrice : 3,
+        productName: 'apples',
+        quantity: 2,
+        bought: false,
+        unitPrice: 3,
     },
     {
-        productName : 'bananas',
-        quantity : 10 ,
-        bought : true,
-        unitPrice : 6,
+        productName: 'bananas',
+        quantity: 10,
+        bought: false,
+        unitPrice: 6,
     },
-    
+
+
+
 ]
 
-function buyProduct(arr, nameOfProduct ) {
-    let a = arr.filter(inBusket => inBusket.productName === nameOfProduct);
-    return a;
+function buyProduct(arr, nameOfProduct) {
+
+ for (i = 0; i < arr.length; i++) {
+   if ( arr[i].productName ===  nameOfProduct){
+       if ( arr[i].bought === false ){
+            arr[i].bought = true;
+            break;
+       } else  {};
+   }
+ }
+
+
+// ***** не знаю чи є можливість перенести змінену строку стану в старий масив
+    // let a = arr.filter(inBusket => inBusket.productName === nameOfProduct);
+    // console.log('do ' + a[0].bought)
+    // if (a[0].bought === false) {
+    //     a[0].bought = true;
+    // } else { }
+    // return ;
 }
-console.log(buyProduct(shoppingList, 'bananas'));
+buyProduct(shoppingList, 'apples');
+// console.log(shoppingList);
 
-
+function showUnbought(arr) {
+    let unboughtProduct = arr.filter(unbought => unbought.bought === false);
+    let print = '';
+    for ( i = 0; i < unboughtProduct.length; i++){
+      print = print + '' + unboughtProduct[i].productName + ' ' +  unboughtProduct[i].quantity + '\n';
+    }
+    return print;
+}
+console.log(showUnbought(shoppingList));
 
 //Робота функції що виводить список непридбаних продуктів спочатку, роботу робимо над копією ісходного масиву.
 // let shoppingListForWork = shoppingList.slice()
