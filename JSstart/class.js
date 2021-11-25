@@ -8,23 +8,29 @@
 // Продемонструй роботу властивостей і методів.
 
 class Circle {
-    constructor (radius){
+    constructor (radius, diameter ){
     this._radius = radius;
+    this._diameter = diameter;
     }
 
     get getRadius (){
         return this._radius;
     }
+
     set setRadius (setRadius) {
      this._radius = setRadius;
     }
     get getDiameter(){
         return this._radius * 2; 
     }
+    circleSquare (){
+       return Math.PI * this._radius ** 2;
+    }
+    circleLength (){
+        return Math.PI * this._radius * 2;
+     }
 
     }
-
-
 let circleUser = new Circle (40);
 console.log(circleUser.getRadius)
 // console.log(circleUser.setRadius = 15 )
@@ -81,3 +87,6 @@ for (let i = 0; i < str.length; i++){
     }
 }
 console.log(inkLevel)
+console.log(circleUser.circleSquare())
+console.log(circleUser.circleLength())
+
