@@ -14,21 +14,19 @@
 // let b = {};
 // b.func1(4,10)
 
-// let car =  {
-//      dirivers : {
-//           driversName: {
-//                driversZarplata : function (UAH, time){
-//                       let zarplata = UAH * time;
-//                       return zarplata;
-//                }
-//           }
-//      }
-// }
+let car =  {
+     dirivers : {
+          driversName: {
+               driversZarplata : function (UAH, time){
+                      let zarplata = UAH * time;
+                      return zarplata;
+               }
+          }
+     }
+}
 
-// function add (k,c){
-//      let a = k + c;
-//      return 1;
-// }
+// console.log(car.dirivers.driversName.driversZarplata(10,8))
+console.log(car.driversName.driversZarplata(10,8))
 
 // console.log(add(4,9) + 5);
 
