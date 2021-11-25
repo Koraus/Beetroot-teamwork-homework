@@ -184,3 +184,19 @@ function add (a, b){
   return ;
 }
 console.log(add(1,4));*/
+
+
+// let arr = [];
+// arr.push('a');
+// arr.push('b');
+// console.log(arr);
+let even = 0;
+let odd = 0;
+for ( let i = 10; i <19; i ++){
+  if( i % 2 == 0) {
+    even = even + 1; 
+  } else odd = odd + 1;
+
+}
+console.log(' Кількість парних чисел :' + even + '\n' +
+            ' Кількість не парних чисел :' + odd ) ;

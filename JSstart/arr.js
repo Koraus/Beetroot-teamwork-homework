@@ -251,12 +251,13 @@ console.log(showUnbought(shoppingList));
 // Виводити весь список на екран таким чином, щоб спочатку йшли продукти, що ще не придбані, а потім - ті, що вже придбали.
 // (Робота функції що виводить список непридбаних продуктів спочатку, роботу робимо над копією ісходного масиву.)
 
-// let shoppingListForWork = shoppingList.slice()
-// function compareProduct(arr) {
-//     arr.sort( function (left, right) {
-//       return (left.bought - right.bought);
-//     })
-// }
+let shoppingListForWork = shoppingList.slice()
+function compareProduct(arr) {
+    arr.sort( function (left, right) {
+      return (left.bought - right.bought);
+    })
+}
 // compareProduct(shoppingListForWork);
 // console.log(shoppingListForWork);
 //
+    
