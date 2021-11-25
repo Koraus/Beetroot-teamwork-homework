@@ -17,13 +17,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var Circle =
 /*#__PURE__*/
 function () {
-  function Circle(radius) {
+  function Circle(radius, diameter) {
     _classCallCheck(this, Circle);
 
     this._radius = radius;
+    this._diameter = diameter;
   }
 
   _createClass(Circle, [{
+    key: "circleSquare",
+    value: function circleSquare() {
+      return Math.PI * Math.pow(this._radius, 2);
+    }
+  }, {
+    key: "circleLength",
+    value: function circleLength() {
+      return Math.PI * this._radius * 2;
+    }
+  }, {
     key: "getRadius",
     get: function get() {
       return this._radius;
@@ -103,3 +114,5 @@ for (var i = 0; i < str.length; i++) {
 }
 
 console.log(inkLevel);
+console.log(circleUser.circleSquare());
+console.log(circleUser.circleLength());
