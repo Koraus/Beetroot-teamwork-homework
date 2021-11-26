@@ -37,7 +37,7 @@
 // console.log(circleUser.getDiameter)
 
 
- /* Завдання 2
+/* Завдання 2
 
 Реалізуй клас, що описує канцелярський маркер. 
 У класі повинні бути такі компоненти:
@@ -48,7 +48,7 @@
 поки в маркері є чорнило; один не пробільний символ — це 0,5% чорнил у маркері).
 Реалізуй клас, що описує маркер, який можна перезаправляти. Успадкуй цей клас від простого маркера і додай метод для заправки.
 
-    Продемонструй роботу написаних методів.
+   Продемонструй роботу написаних методів.
 */
 
 class Marker {
@@ -56,39 +56,60 @@ class Marker {
     constructor(color, quantity) {
         this.color = color;
         this.quantity = quantity;
-    }  
+    }
+    
+    print (text){
+            let canPrint = [];
+            for (let i = 0; i < text.length; i++) {
+                if (this.quantity > 0) {
+                    if (text[i] == ' ') {
+                        canPrint.push(text[i])
+                    } else if (text[i] != ' ') {
+                        canPrint.push(text[i]);
+                        this.quantity = this.quantity - 1;
+                    }
+                } else if (text[i] == ' ') {
+                    canPrint.push(text[i]);
+                } 
+            }
+            return canPrint.join('') + ' ' + ' text color ' + this.color; 
+    }
 
 }
 
 
-
-
-function printText (text, color){
-    console.log(text + color)
-}
-
-printText('dsdsdsdsd', '    red');
-
-function check (text) {
- let inkLvl = 4;
- let canPrintC = 0;
-
- for (let i = 0; i <text.length;  i++){
-
-   if( text[i] != ' ') {
-    inkLvl = inkLvl - 1;
-   } else
-     canPrintC = i;
-    ;
-
-    printText()
- }
+const plainMarker = new Marker ('Green', 5);
+console.log(plainMarker.print('te xt 001'));
 
 
 
-}
 
-check('ab cd')
+// function printText(text, color) {
+//     console.log(text + color)
+// }
+
+// printText('dsdsdsdsd', '    red');
+
+// function check(text) {
+//     let inkLvl = 4;
+//     let canPrint = [];
+
+//     for (let i = 0; i < text.length; i++) {
+//         if (inkLvl > 0) {
+//             if (text[i] == ' ') {
+//                 canPrint.push(text[i])
+//             } else if (text[i] != ' ') {
+//                 canPrint.push(text[i]);
+//                 inkLvl = inkLvl - 1;
+//             }
+//         } else if (text[i] == ' ') {
+//             canPrint.push(text[i]);
+//         } 
+//     }
+//     return canPrint;
+// }
+// console.log(check('ab cd  g'))
+
 
 // 3
 
@@ -138,10 +159,10 @@ check('ab cd')
 //     set firstName (name) {
 //         if( 3 > name.length){
 //          console.log('ne pidhodyt')
-         
+
 //         }
 //     }
-    
+
 //     fullName() {
 //         return this._name + ' '+ this._secondName;
 //     }
