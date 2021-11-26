@@ -82,6 +82,21 @@ const plainMarker = new Marker ('Green', 5);
 console.log(plainMarker.print('te xt 001'));
 
 
+class FillMarker extends Marker {
+    constructor(color, quantity) {
+        super(color, quantity);   
+    }
+    fill(rivenDozapravki) {
+
+    this.quantity = this.quantity + rivenDozapravki
+        
+    } 
+}
+let fillMarker1 = new FillMarker ('Red',24)
+console.log (fillMarker1)
+
+fillMarker1.fill(26);
+console.log (fillMarker1)
 
 
 // function printText(text, color) {
