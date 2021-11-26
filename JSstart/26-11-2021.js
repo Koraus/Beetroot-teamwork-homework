@@ -22,7 +22,7 @@
 // diapazon(start, end);
 //console.log(isSeven());
 
-let start = 2;
+/* let start = 2;
 let end = 10;
 
 
@@ -31,13 +31,13 @@ function findOddNumber(startNumber, endNumber) {
     for (let i = startNumber; i <= endNumber; i++){
         if (i % 2 === 0) {
             massive.push(i)
-              
+
         }
 
     }
     return massive;
 }
-console.log(findOddNumber(30, 45));
+console.log(findOddNumber(30, 45)); */
 
 // const arr1 = ['44', 44, true, 0];
 // console.log(arr1);
