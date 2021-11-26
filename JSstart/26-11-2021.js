@@ -21,3 +21,35 @@
 
 // diapazon(start, end);
 //console.log(isSeven());
+
+let start = 2;
+let end = 10;
+
+
+function findOddNumber(startNumber, endNumber) {
+    const massive = [];
+    for (let i = startNumber; i <= endNumber; i++){
+        if (i % 2 === 0) {
+            massive.push(i)
+              
+        }
+
+    }
+    return massive;
+}
+console.log(findOddNumber(30, 45));
+
+// const arr1 = ['44', 44, true, 0];
+// console.log(arr1);
+// arr1.push(55);
+// console.log(arr1);
+
+
+// 1 2 3 4 5 6
+// if (1 == 4) { }
+// if (2 == 4) { }
+// if (3 == 4) { }
+// if (4 == 4) {  arr.push(4) }
+// if (5 == 4) { }
+// if (6 == 4) { }
+//                     arr.push(8)                        
