@@ -7,34 +7,34 @@
 // метод, що обчислює довжину кола.
 // Продемонструй роботу властивостей і методів.
 
-class Circle {
-    constructor (radius, diameter ){
-    this._radius = radius;
-    this._diameter = diameter;
-    }
+// class Circle {
+//     constructor (radius, diameter ){
+//     this._radius = radius;
+//     this._diameter = diameter;
+//     }
 
-    get getRadius (){
-        return this._radius;
-    }
+//     get getRadius (){
+//         return this._radius;
+//     }
 
-    set setRadius (setRadius) {
-     this._radius = setRadius;
-    }
-    get getDiameter(){
-        return this._radius * 2; 
-    }
-    circleSquare (){
-       return Math.PI * this._radius ** 2;
-    }
-    circleLength (){
-        return Math.PI * this._radius * 2;
-     }
+//     set setRadius (setRadius) {
+//      this._radius = setRadius;
+//     }
+//     get getDiameter(){
+//         return this._radius * 2; 
+//     }
+//     circleSquare (){
+//        return Math.PI * this._radius ** 2;
+//     }
+//     circleLength (){
+//         return Math.PI * this._radius * 2;
+//      }
 
-    }
-let circleUser = new Circle (40);
-console.log(circleUser.getRadius)
+//     }
+// let circleUser = new Circle (40);
+// console.log(circleUser.getRadius)
 // console.log(circleUser.setRadius = 15 )
-console.log(circleUser.getDiameter)
+// console.log(circleUser.getDiameter)
 
 
  /* Завдання 2
@@ -52,16 +52,44 @@ console.log(circleUser.getDiameter)
 */
 
 class Marker {
+
     constructor(color, quantity) {
         this.color = color;
         this.quantity = quantity;
-    }
-
-    printText(text) {
-        
-}
+    }  
 
 }
+
+
+
+
+function printText (text, color){
+    console.log(text + color)
+}
+
+printText('dsdsdsdsd', '    red');
+
+function check (text) {
+ let inkLvl = 4;
+ let canPrintC = 0;
+
+ for (let i = 0; i <text.length;  i++){
+
+   if( text[i] != ' ') {
+    inkLvl = inkLvl - 1;
+   } else
+     canPrintC = i;
+    ;
+
+    printText()
+ }
+
+
+
+}
+
+check('ab cd')
+
 // 3
 
 // 1234
@@ -76,17 +104,47 @@ class Marker {
 //     } else neProbil = neProbil + 1;
 // }
 // console.log('kilkist spase ' + numOfSpace +'\n' + 'ne probil '+ neProbil)
-let inkLevel = 4;
-let str = 'Str kdd'
-for (let i = 0; i < str.length; i++){
-    if (i != ' ') {
-        inkLevel = inkLevel - 1;
-        if (inkLevel = 0) {
-            break
-        }
-    }
-}
-console.log(inkLevel)
-console.log(circleUser.circleSquare())
-console.log(circleUser.circleLength())
+// let inkLevel = 4;
+// let str = 'Str kdd'
+// for (let i = 0; i < str.length; i++){
+//     if (i != ' ') {
+//         inkLevel = inkLevel - 1;
+//         if (inkLevel = 0) {
+//             break
+//         }
+//     }
+// }
+// console.log(inkLevel)
+// console.log(circleUser.circleSquare())
+// console.log(circleUser.circleLength())
+
+
+
+
+
+
+
+
+//********************************* 
+// class Student {
+//      constructor (name, secondName){
+//          this._name = name;
+//          this._secondName = secondName;
+
+//     }
+//     get studentName() {
+//          return this._name;
+//     }
+//     set firstName (name) {
+//         if( 3 > name.length){
+//          console.log('ne pidhodyt')
+         
+//         }
+//     }
+    
+//     fullName() {
+//         return this._name + ' '+ this._secondName;
+//     }
+// };
+//**********************************
 
