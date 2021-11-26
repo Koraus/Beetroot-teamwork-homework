@@ -68,8 +68,10 @@ class Marker {
                         canPrint.push(text[i]);
                         this.quantity = this.quantity - 1;
                     }
-                } else if (text[i] == ' ') {
-                    canPrint.push(text[i]);
+                }
+                // mozhna ne vikoristovuvatu
+                // } else if (text[i] == ' ') {
+                //     canPrint.push(text[i]);
                 } 
             }
             return canPrint.join('') + ' ' + ' text color ' + this.color; 
