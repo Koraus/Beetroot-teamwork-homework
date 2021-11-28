@@ -31,7 +31,7 @@ a.fullName = 'Vasya Pupkin';
 console.log(a);
 
 
-// function sss (a, f) {
+// function sss (a, f) { // приклад функції яка збирає обєкт з переданих аргументів
 //     let g = a;
 //     let h = f;
 //     let k = {
@@ -41,4 +41,4 @@ console.log(a);
 //     return k;
 // }
 
-// console.log(sss(19,2));
+// console.log(sss(19,2)); 
