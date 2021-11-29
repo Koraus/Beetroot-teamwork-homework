@@ -1,6 +1,7 @@
 // Завдання 3
 
-//   Реалізуй клас Employee, що описує працівника, і створи масив працівників банку.
+//   Реалізуй клас Employee, що описує працівника, і 
+//створи масив працівників банку.
 
 //   Реалізуй клас EmpTable для генерації HTML-коду таблиці зі списком працівників банку.
 //  Масив працівників необхідно передавати через конструктор, а отримувати HTML-код за допомогою методу getHtml ().
@@ -8,7 +9,7 @@
 //  Створи об'єкт класу EmpTable і виведи на екран результат роботи методу getHtml ().
 
 
-class Employee  { 
+class Employee  {  // Реалізуй клас Employee, що описує працівника
     constructor (firstName, lastName ) {
         this._firstName = firstName;
         this._lastName = lastName;
@@ -23,22 +24,30 @@ class Employee  {
 
 };
 
-let a = new Employee ('Dmytro' , 'Yaroslavovych');
+let  employee1 = new Employee ('Dmytro' , 'Yaroslavovych');
+let  employee2 = new Employee ('Vasyl' , 'Ivanovych');
+let  employee3 = new Employee ('Oleg' , 'Viktorovych');
+let arrEmployee = [employee1, employee2, employee3] //створи масив працівників банку.
+// console.log(arrEmployee);
 
-console.log(a);
-
-a.fullName = 'Vasya Pupkin';
-console.log(a);
 
 
-// function sss (a, f) { // приклад функції яка збирає обєкт з переданих аргументів
-//     let g = a;
-//     let h = f;
-//     let k = {
-//         product : a,
-//         kiltist : f,
-//     }
-//     return k;
-// }
+class EmpTable { // Реалізуй клас EmpTable
+    constructor(arrEmployee){ //Масив працівників необхідно передавати через конструктор
+    this._arrEmployee = arrEmployee;
+    }
 
-// console.log(sss(19,2)); 
+    get getHtml (){ //генерації HTML-коду таблиці зі списком працівників банку.
+      let napovnenna = ``;
+
+        for (let i = 0; i < this._arrEmployee.length; i++ ){          
+            napovnenna = napovnenna + `<tr> <td> ${i + 1} </td> <td> ${this._arrEmployee[i]._firstName} </td>  <td>${this._arrEmployee[i]._lastName} </td></tr>` ;
+        }
+        let info = `<table> ${napovnenna}}  </table>`
+        return info;
+    }
+
+}
+
+let table = new EmpTable (arrEmployee);
+console.log(table.getHtml)//отримувати HTML-код за допомогою методу get
