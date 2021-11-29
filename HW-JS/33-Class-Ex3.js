@@ -46,6 +46,9 @@ class EmpTable { // Реалізуй клас EmpTable
     let info = `<table> ${napovnenna}  </table>`
     return info;
   }
+    let info = `<table> ${napovnenna}  </table>`
+return info;
+  }
 
 }
 
