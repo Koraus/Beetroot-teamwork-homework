@@ -48,3 +48,5 @@ for ( i = 0; i < playList.length; i++ ){
 }
 
 document.write(listForHtml);
+
+document.querySelector('.styleP').innerHTML = 'dsdsds';
