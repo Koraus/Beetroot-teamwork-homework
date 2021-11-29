@@ -43,7 +43,7 @@ class EmpTable { // Реалізуй клас EmpTable
         for (let i = 0; i < this._arrEmployee.length; i++ ){          
             napovnenna = napovnenna + `<tr> <td> ${i + 1} </td> <td> ${this._arrEmployee[i]._firstName} </td>  <td>${this._arrEmployee[i]._lastName} </td></tr>` ;
         }
-        let info = `<table> ${napovnenna}}  </table>`
+        let info = `<table> ${napovnenna}  </table>`
         return info;
     }
 
