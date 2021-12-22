@@ -15,36 +15,32 @@ let textArea = document.getElementById('text-area');
 document.addEventListener('keydown', function (event) {
     // event.preventDefault()
     if (event.code == 'KeyE' && event.ctrlKey) {
-        event.preventDefault()
+        // event.preventDefault()
         textDiv.classList.add('whid');
         textArea.classList.remove('whid');
+        textArea.value = textDiv.innerText;
     }
 
-    textArea.value = textDiv.innerText;
+
 
 });
 
 document.addEventListener('keydown', function (event) {
-    event.preventDefault()
-    if (event.code == 'KeyE' && event.ctrlKey) {
-        event.preventDefault()
-        textDiv.classList.add('whid');
-        textArea.classList.remove('whid');
+
+    // event.returnValue = false;
+    if (event.code == 'Equal' && event.ctrlKey) {
+        // event.preventDefault()
+       textArea.classList.add('whid');
+       textDiv.classList.remove('whid');
+       textDiv.innerText = textArea.value; 
+     
     }
 
-    textArea.innerText = textDiv.innerText;
+
+     
+   
 
 });
 
-document.addEventListener('keydown', function (event) {
-    event.preventDefault()
-    if ((event.code == 'Equal' || event.code === 'Comma') && event.ctrlKey) {
-        event.preventDefault()
 
-        textArea.classList.add('whid');
-        textDiv.classList.remove('whid');
-    }
-    textDiv.innerText =  textArea.innerText; 
- 
-})
 
