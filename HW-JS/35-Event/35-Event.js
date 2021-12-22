@@ -12,13 +12,34 @@
 let textDiv = document.getElementById('text-fild');
 let textArea = document.getElementById('text-area');
 
-document.addEventListener('keydown', function(event) {
-    event.preventDefault()
-    if ( (event.code == 'KeyE' || event.code === 'Comma' ) && event.ctrlKey ) {
-
+document.addEventListener('keydown', function (event) {
+    // event.preventDefault()
+    if ((event.code == 'KeyE' || event.code === 'Comma') && event.ctrlKey) {
+        event.preventDefault()
         textDiv.classList.add('whid');
-
         textArea.classList.remove('whid');
     }
-   
-  });
+
+    textArea.innerText = textDiv.innerText;
+
+});
+
+document.addEventListener('keydown', function (event) {
+    // event.preventDefault()
+    if ((event.code == 'KeyE' || event.code === 'Comma') && event.ctrlKey) {
+        event.preventDefault()
+        textDiv.classList.add('whid');
+        textArea.classList.remove('whid');
+    }
+
+    textArea.innerText = textDiv.innerText;
+
+});
+
+document.addEventListener('keydown', function (event) {
+
+    if ((event.code == 'Equal' || event.code === 'Comma') && event.ctrlKey) {
+        event.preventDefault()
+        alert('aa');    }
+})
+
