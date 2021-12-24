@@ -23,12 +23,11 @@ function takeCoordStart() {
     startX = coordinatesMouthX();
     startY = coordinatesMouthY();
     isClicked = true;
-    console.log(isClicked)
+
 }
 function takeCoordEnd() {
     endX = coordinatesMouthX();
     endY = coordinatesMouthY();
-    console.log('take');
 
 }
 
@@ -45,7 +44,16 @@ document.addEventListener('mouseup', function () {
     if (isClicked === true) {
         takeCoordEnd();
         calcAndRender();
-        console.log('2 ' + isClicked)
+
+        console.log(`
+        startX ${startX}
+        endX  ${endX}
+        startY  ${startY}
+        endY ${endY}
+
+       Width for change: ${widthDivForChange} 
+       Height for change:  ${heightDivForChange}
+        ` )
     }
 });
 
