@@ -4,15 +4,6 @@
 let clickArea = document.getElementById('forClick');
 let divForText = document.querySelector('.text-div');
 
-// clickArea.addEventListener('click', function (event){
-//     clickArea.classList.add('ok');
-// });
-
-
-// // mousedown
-// // mousemove
-// // mouseup
-
 let startX;
 let startY = 0;
 let endX;
@@ -20,10 +11,11 @@ let endY = 0;
 let startWidth = parseInt(window.getComputedStyle(document.getElementById('textDiv')).width);
 let startHeight = parseInt(window.getComputedStyle(document.getElementById('textDiv')).height);
 
-// let evenMouseD = clickArea.addEventListener('mousedown', a => a);
-
-
 clickArea.addEventListener('mousedown', forClick);
+
+// // mousedown
+// // mousemove
+// // mouseup
 
 
 function forClick(evenMouseD) {
@@ -92,9 +84,6 @@ function coordinatesMouthY() {
 
 function coordinateDifference(start, end) {
     return end - start ; 
-
-
-
 
 }
 
